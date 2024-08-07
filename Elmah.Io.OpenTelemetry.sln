@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97E4DE5D-EADB-4BC3-9E41-BB3D64727B43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.OpenTelemetry", "src\Elmah.Io.OpenTelemetry\Elmah.Io.OpenTelemetry.csproj", "{AA4617C1-358B-4AE8-84EA-B35CE929DEFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{15109CDB-981A-4549-81A3-F8DF2E84C40D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{8382E0E0-FBC5-4371-B52C-B727F4DB840A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.OpenTelemetry.AspNetCore80", "samples\Elmah.Io.OpenTelemetry.AspNetCore80\Elmah.Io.OpenTelemetry.AspNetCore80\Elmah.Io.OpenTelemetry.AspNetCore80.csproj", "{4184CE4E-FEBC-4FD9-9F16-16DCC971008A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.OpenTelemetry.Test", "test\Elmah.Io.OpenTelemetry.Test\Elmah.Io.OpenTelemetry.Test.csproj", "{24F07B79-A127-4B2E-839E-312591B0435E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA4617C1-358B-4AE8-84EA-B35CE929DEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4617C1-358B-4AE8-84EA-B35CE929DEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4617C1-358B-4AE8-84EA-B35CE929DEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4617C1-358B-4AE8-84EA-B35CE929DEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4184CE4E-FEBC-4FD9-9F16-16DCC971008A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4184CE4E-FEBC-4FD9-9F16-16DCC971008A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4184CE4E-FEBC-4FD9-9F16-16DCC971008A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4184CE4E-FEBC-4FD9-9F16-16DCC971008A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F07B79-A127-4B2E-839E-312591B0435E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F07B79-A127-4B2E-839E-312591B0435E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F07B79-A127-4B2E-839E-312591B0435E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F07B79-A127-4B2E-839E-312591B0435E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA4617C1-358B-4AE8-84EA-B35CE929DEFD} = {97E4DE5D-EADB-4BC3-9E41-BB3D64727B43}
+		{4184CE4E-FEBC-4FD9-9F16-16DCC971008A} = {8382E0E0-FBC5-4371-B52C-B727F4DB840A}
+		{24F07B79-A127-4B2E-839E-312591B0435E} = {15109CDB-981A-4549-81A3-F8DF2E84C40D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB967E9E-470E-43CF-9A71-356CA7B8DDE4}
+	EndGlobalSection
+EndGlobal

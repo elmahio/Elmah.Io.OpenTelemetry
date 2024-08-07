@@ -1,0 +1,46 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          8.0.x
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Check vulnerable NuGet packages
+      uses: elmahio/github-check-vulnerable-nuget-packages-action@v1
+
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+
+    - name: Pack
+      run: dotnet pack --configuration Release src/Elmah.Io.OpenTelemetry/Elmah.Io.OpenTelemetry.csproj /p:Version=5.2.${{ github.run_number }}-pre
+
+    - name: Install dotnet-validate
+      run: dotnet tool install --global dotnet-validate --version 0.0.1-preview.304
+
+    - name: Validate
+      run: dotnet-validate package local src/Elmah.Io.OpenTelemetry/bin/Release/Elmah.Io.OpenTelemetry.5.2.${{ github.run_number }}-pre.nupkg
+
+    - name: Push
+      run: dotnet nuget push src/Elmah.Io.OpenTelemetry/bin/Release/Elmah.Io.OpenTelemetry.5.2.${{ github.run_number }}-pre.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+      if: ${{ github.event_name == 'push' }}

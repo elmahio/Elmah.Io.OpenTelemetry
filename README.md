@@ -1,2 +1,3 @@
 # Elmah.Io.OpenTelemetry
-Logging to elmah.io from OpenTelemetry
+
+Log to [elmah.io](https://elmah.io/) from OpenTelemetry.
