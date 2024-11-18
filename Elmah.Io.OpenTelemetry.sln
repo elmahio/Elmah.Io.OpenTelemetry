@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.OpenTelemetry.AspN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.OpenTelemetry.Test", "test\Elmah.Io.OpenTelemetry.Test\Elmah.Io.OpenTelemetry.Test.csproj", "{24F07B79-A127-4B2E-839E-312591B0435E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.OpenTelemetry.AspNetCore90", "samples\Elmah.Io.OpenTelemetry.AspNetCore90\Elmah.Io.OpenTelemetry.AspNetCore90.csproj", "{CC56679E-4448-485D-A17B-185EEB31C0DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{24F07B79-A127-4B2E-839E-312591B0435E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24F07B79-A127-4B2E-839E-312591B0435E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24F07B79-A127-4B2E-839E-312591B0435E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC56679E-4448-485D-A17B-185EEB31C0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC56679E-4448-485D-A17B-185EEB31C0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC56679E-4448-485D-A17B-185EEB31C0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC56679E-4448-485D-A17B-185EEB31C0DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{AA4617C1-358B-4AE8-84EA-B35CE929DEFD} = {97E4DE5D-EADB-4BC3-9E41-BB3D64727B43}
 		{4184CE4E-FEBC-4FD9-9F16-16DCC971008A} = {8382E0E0-FBC5-4371-B52C-B727F4DB840A}
 		{24F07B79-A127-4B2E-839E-312591B0435E} = {15109CDB-981A-4549-81A3-F8DF2E84C40D}
+		{CC56679E-4448-485D-A17B-185EEB31C0DF} = {8382E0E0-FBC5-4371-B52C-B727F4DB840A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB967E9E-470E-43CF-9A71-356CA7B8DDE4}
